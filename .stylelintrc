@@ -1,0 +1,28 @@
+{
+  "rules": {  
+   
+    "at-rule-name-case": "lower",  
+    "at-rule-name-space-after": "always",    
+    "block-closing-brace-newline-after": "always",   
+    "color-hex-case": "lower",
+    "color-hex-length": "short",        
+    "comment-no-empty": true,       
+    "declaration-block-no-shorthand-property-overrides": true,  
+    "declaration-block-single-line-max-declarations": 1,        
+    "indentation": 2,  
+    "length-zero-no-unit": true,   
+    "no-descending-specificity": true,
+    "no-duplicate-at-import-rules": true,
+    "no-duplicate-selectors": true,
+    "no-empty-source": true,    
+    "no-invalid-double-slash-comments": true,
+    "no-missing-end-of-source-newline": true,   
+    "number-leading-zero": "never",  
+    "property-case": "lower",    
+    "selector-attribute-quotes": "always",    
+    "selector-list-comma-newline-after": "always-multi-line",    
+    "shorthand-property-no-redundant-values": true,
+    "string-no-newline": true,
+    "string-quotes": "double"    
+  }
+}

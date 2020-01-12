@@ -1,0 +1,58 @@
+.wrapper-blog {
+  .image{
+    background-image: url('/assets/images/musico.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .cabecera-blog {
+    grid-column: 1 / span 3;
+    grid-row: 2 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 100px 150px;
+    justify-content: center;
+    height: 500px;
+
+    .text-center {
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
+      justify-content: center;
+      z-index: 2;
+    }
+    img {
+      grid-column: 1 / span 3;
+      grid-row: 1 / 3;
+      margin: auto;
+      max-height: 500px;
+    }
+  }
+
+  article {
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+    color: $black;
+    width: 100%;
+  }
+
+  #introduccion,
+  #listado,
+  #columnas,
+  #imagen,
+  #ultimo_parrafo {
+    margin: 20px;
+  }
+
+  #listado {
+    height: 300px;
+    // border-top: 2px solid $gray;
+    // border-bottom: 2px solid $gray;
+  }
+
+  #ultimo_parrafo {
+    .img-fluid {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}

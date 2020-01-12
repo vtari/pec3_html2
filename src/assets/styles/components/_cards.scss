@@ -1,0 +1,53 @@
+@supports (display: grid) {
+  /** CARDS INFORMACION **/
+  .contacto {
+    grid-column: 1 / span 3;
+    grid-row: 1 / 1;
+    background-image: linear-gradient($secondary, $black);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card-ubicacion,
+  .card-telefono,
+  .card-web {
+    border: none !important;
+    z-index: 2;
+    color: $white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-height: 100px;
+  }
+
+  .card-ubicacion {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+
+  .card-telefono {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+  }
+
+  .card-web {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+  }
+  @media (max-width: 360px) {
+    .card-ubicacion {
+      grid-column: 1 / span 3;
+      grid-row: 1 / 1;
+    }
+
+    .card-telefono {
+      grid-column: 1 / span 3;
+      grid-row: 2 / 2;
+    }
+
+    .card-web {
+      grid-column: 1 / span 3;
+      grid-row: 3 / 3;
+    }
+  }
+}
