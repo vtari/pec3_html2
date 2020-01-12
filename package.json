@@ -15,7 +15,8 @@
   "stylelint": {
     "rules": {
       "at-rule-no-unknown": [
-        true, {
+        true,
+        {
           "ignoreAtRules": [
             "tailwind",
             "apply",
@@ -58,7 +59,6 @@
     "tailwindcss": "^1.1.4"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0"
   }
